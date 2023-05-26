@@ -1,6 +1,9 @@
 @echo off
-@echo off
 CLS
+
+echo WARNING:
+echo RUN THIS AS ADMINISTRATOR!!!
+pause
 
 REM Überprüfen, ob das Skript als Administrator ausgeführt wird
 NET SESSION >NUL 2>&1
