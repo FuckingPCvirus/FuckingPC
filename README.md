@@ -7,6 +7,7 @@ By clicking the Download link you are accepting the following rules:
 3. It's very important to run this software on a virtuall Mashine!!!
 
 ITS NOT RECOMMEND TO USE THIS SOFTWARE!
+Download under Realeases
 
 Why you shoud not use this software:
 Installing a virus intentionally is a reckless and dangerous act with far-reaching consequences. The damage caused by viruses can range from inconvenience and data loss to legal troubles and irreparable harm. It is essential to prioritize cybersecurity and take proactive measures to protect your digital environment. By practicing safe browsing habits, using reputable security software, and staying informed about the latest threats, you can help create a more secure and resilient digital ecosystem for yourself and others. Remember, prevention is always better than dealing with the aftermath of a virus infection.
